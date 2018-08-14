@@ -1,10 +1,8 @@
 // Write your solution in this file!
-const driver = {}
+const driver = {};
 
 function updateDriverWithKeyAndValue(driver, key, value) {
-  driver = {
-    key: value
-  }
+  return Object.assign({}, driver, { [key]: value });
 }
 
 function destructivelyUpdateDriverWithKeyAndValue() {
@@ -12,4 +10,12 @@ function destructivelyUpdateDriverWithKeyAndValue() {
     key: value
   }
     return driver
+}
+
+function deleteFromDriverByKey() {
+
+}
+
+function destructivelyDeleteFromDriverByKey() {
+
 }
